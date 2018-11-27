@@ -2,10 +2,8 @@
     margin: auto;
     width: 50%;
     background-color: lightgrey;
-    
-    border: 1px solid green;
-    padding: 1px;
-    
+    border: 3px solid rgb(163, 171, 180);
+
 }
 
 h1 {

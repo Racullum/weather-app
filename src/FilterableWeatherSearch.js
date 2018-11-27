@@ -6,8 +6,8 @@ class FilterableWeatherSearch extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          searchQuery: {city: '', state: ''},
-          temperature: 50,
+          searchQuery: {city: '', country: ''},
+          temperature: '',
           icon: ''
         };
 
