@@ -1,0 +1,14 @@
+.Weather-Results-weather-container {
+    margin: auto;
+    width: 50%;
+    background-color: lightgrey;
+    
+    border: 1px solid green;
+    padding: 1px;
+    
+}
+
+h1 {
+    position: center;
+    
+}
