@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './WeatherResults.css';
+import './css/WeatherResults.css';
 
 class WeatherResults extends Component {
     render() {

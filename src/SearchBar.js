@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import weatherIcons from './weatherIcons.json';
 import './css/weather-icons.min.css';
-import './SearchBar.css'
+import './css/SearchBar.css'
 
 class SearchBar extends Component {
     constructor(props) {
