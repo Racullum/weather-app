@@ -11,7 +11,8 @@ class FilterableWeatherSearch extends Component {
           searchQuery: {city: '', country: ''},
           temperature: '',
           weatherDescription: '',
-          location: ''
+          location: '',
+          icon: ''
         };
 
         this.onSearchQueryChange = this.onSearchQueryChange.bind(this);
@@ -26,11 +27,12 @@ class FilterableWeatherSearch extends Component {
         });
     }
 
-    onSubmit(temp, descr, location) {
+    onSubmit(temp, descr, location, icon) {
         this.setState({
             temperature: Math.floor(temp),
             weatherDescription: capitalizeFirstLetter(descr),
-            location: location
+            location: location,
+            icon: icon
         });
     }
 
@@ -39,7 +41,7 @@ class FilterableWeatherSearch extends Component {
             <div>
             <SearchBar searchQuery={this.state.searchQuery} onSearchQueryChange={this.onSearchQueryChange} onSubmit={this.onSubmit}/>
             <WeatherResults temperature={this.state.temperature} weatherDescription={this.state.weatherDescription} 
-                location={this.state.location}/>
+                location={this.state.location} icon={this.state.icon}/>
             </div>
         );
     }
