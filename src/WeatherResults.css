@@ -1,12 +1,55 @@
 .Weather-Results-weather-container {
+    
+    width: 40%;
+    margin-top: 10%;
+    background-image: linear-gradient(to top left, #2196F3, #80DEEA);
+    height: 200px;
+    background-color:  white;
+    vertical-align: text-center;
+    
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.Weather-Results-weather-h1 {
+    width: 75%;
     margin: auto;
-    width: 50%;
-    background-color: lightgrey;
-    border: 3px solid rgb(163, 171, 180);
+    margin-left: 15%;
+    height: 100%;
+    text-align: left;
+    color: white;
 
 }
 
 h1 {
-    position: center;
+
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+    margin:0px;
+    display: inline-block;
+
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;
+     
+
     
+      
 }

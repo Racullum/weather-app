@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import SearchBar from './SearchBar';
 import WeatherResults from './WeatherResults';
+import { capitalizeFirstLetter } from './helpers/StringFormatting';
+
 
 class FilterableWeatherSearch extends Component {
     constructor(props) {
@@ -8,7 +10,8 @@ class FilterableWeatherSearch extends Component {
         this.state = {
           searchQuery: {city: '', country: ''},
           temperature: '',
-          icon: ''
+          weatherDescription: '',
+          location: ''
         };
 
         this.onSearchQueryChange = this.onSearchQueryChange.bind(this);
@@ -23,10 +26,11 @@ class FilterableWeatherSearch extends Component {
         });
     }
 
-    onSubmit(temp, icon_id) {
+    onSubmit(temp, descr, location) {
         this.setState({
-            temperature: temp,
-            icon: 'http://openweathermap.org/img/w/'+icon_id+'.png'
+            temperature: Math.floor(temp),
+            weatherDescription: capitalizeFirstLetter(descr),
+            location: location
         });
     }
 
@@ -34,7 +38,8 @@ class FilterableWeatherSearch extends Component {
         return (
             <div>
             <SearchBar searchQuery={this.state.searchQuery} onSearchQueryChange={this.onSearchQueryChange} onSubmit={this.onSubmit}/>
-            <WeatherResults temperature={this.state.temperature} icon={this.state.icon}/>
+            <WeatherResults temperature={this.state.temperature} weatherDescription={this.state.weatherDescription} 
+                location={this.state.location}/>
             </div>
         );
     }

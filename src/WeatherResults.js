@@ -5,8 +5,11 @@ class WeatherResults extends Component {
     render() {
       return (
           <div className='Weather-Results-weather-container'>
-            <img src={this.props.icon}></img>
-            <h1>{this.props.temperature}</h1>
+            <div className='Weather-Results-weather-h1'>
+              {this.props.temperature != '' ? <h1>{this.props.temperature}&#176; </h1>: null}
+              <h2>{this.props.weatherDescription}</h2>
+              {this.props.temperature != '' ? <h3>{this.props.location}</h3>: null}
+            </div>
           </div>
       )
     }

@@ -1,13 +1,65 @@
 .Search-Bar-Form {
-    margin: auto;
-    width: 50%;
-    border: 3px solid rgb(163, 171, 180);
+    height: 200px;
+    background-image: linear-gradient(to top right, #2196F3, #80DEEA);
+    vertical-align: text-top;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 .Search-Bar-Inputs-Container {
-    text-align: center;
+   
 }
 
 .Search-Bar-Input {
+    padding-left: 10px;
+    background-color: transparent; 
+    border-style: solid; 
+    border-width: 0px 0px 1px 0px; 
+    border-color: white;
     margin: 10px;
+    margin-top: 40px;
+    outline: none;
+    color: white;
+    font-family: "Roboto";
+    
+}
+
+.Search-Bar-Input-Submit {
+    border: none;
+    background: #0D47A1;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input {
+    padding-left: 10px;
+    background-color: transparent; 
+    border-style: solid; 
+    border-width: 0px 0px 1px 0px; 
+    border-color: white;
+    margin: 10px;
+    margin-top: 40px;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+    caret-color: white;
+    transition: background-color 5000s ease-in-out 0s;
 }
