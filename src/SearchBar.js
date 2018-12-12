@@ -18,7 +18,7 @@ class SearchBar extends Component {
         console.log("Handling submit");
         console.log(process.env.REACT_APP_API_KEY);
         fetch(
-            'http://api.openweathermap.org/data/2.5/weather?q='+this.props.searchQuery.city+','+this.props.searchQuery.country+'&APPID='+process.env.REACT_APP_API_KEY+'&units=imperial')
+            process.env.REACT_APP_API_URL+'?q='+this.props.searchQuery.city+','+this.props.searchQuery.country+'&APPID='+process.env.REACT_APP_API_KEY+'&units=imperial')
             .then(response => response.json())
             .then(data => {
 
