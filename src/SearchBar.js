@@ -15,8 +15,6 @@ class SearchBar extends Component {
     }
 
     handleSubmit(event) {
-        console.log("Handling submit");
-        console.log(process.env.REACT_APP_API_KEY);
         fetch(
             process.env.REACT_APP_API_URL+'?q='+this.props.searchQuery.city+','+this.props.searchQuery.country+'&APPID='+process.env.REACT_APP_API_KEY+'&units=imperial')
             .then(response => response.json())
